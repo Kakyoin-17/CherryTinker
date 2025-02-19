@@ -1,0 +1,6 @@
+{
+  "type": "forge:add_features",
+  "biomes": "#minecraft:is_overworld",
+  "features": "cherrytinker:cherry_gem_placed",
+  "step": "underground_ores"
+}

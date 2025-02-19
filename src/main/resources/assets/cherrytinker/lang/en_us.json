@@ -1,0 +1,56 @@
+{
+  "itemGroup.cherrytinker": "Cherry Tinker",
+
+  "fluid_type.cherrytinker.cherry_juice": "Cherry Juice",
+  "fluid_type.cherrytinker.molten_cherrygem":"Molten Cherrygem" ,
+  "fluid_type.cherrytinker.molten_enchantedgold":"Molten Enchantedgold",
+  "fluid_type.cherrytinker.moon_cherryfuel":"Blazing Blue Moon Cherry ",
+  "fluid_type.cherrytinker.sun_cherryfuel":"Red Sun Sakura",
+
+  "item.cherrytinker.sk_blade": "Straight blade",
+  "item.cherrytinker.sk": "Straight knives",
+  "item.cherrytinker.sk.description": "The straight knife is a melee weapon that is also effective against spider webs like a sword",
+  "item.cherrytinker.pas": "Pickaxe axe",
+  "item.cherrytinker.pas.description": "The pickaxe is a multi-functional digging tool that combines the digging functions of a pickaxe, axe, and shovel, and can also right-click to debark trees",
+  "item.cherrytinker.rod": "Fishing Rod",
+  "item.cherrytinker.rod.description": "A fishing rod that is stronger than the original fishing rod",
+
+  "item.cherrytinker.sk_blade_cast": "Straight blade Cast",
+  "item.cherrytinker.sk_blade_sand_cast": "Straight blade Sand Cast",
+  "item.cherrytinker.sk_blade_red_sand_cast": "Straight blade Red Sand Cast ",
+  "pattern.cherrytinker.sk_blade": "Straight blade",
+
+  "item.cherrytinker.cherry":"Cherry",
+  "item.cherrytinker.cherry_juice": "Cherry Juice",
+  "item.cherrytinker.cherry_juice_bucket": "Cherry Juice Bucket",
+  "item.cherrytinker.molten_cherrygem_bucket": "Molten Cherrygem Bucket",
+  "item.cherrytinker.molten_enchantedgold_bucket": "Molten Enchantedgold Bucket",
+  "item.cherrytinker.enchantedgold": "Egold",
+  "item.cherrytinker.enchanted_golden_carrot": "Enchanted Golden Carrot",
+  "item.cherrytinker.cherrygem": "CherryGem",
+  "item.cherrytinker.moon_cherryfuel_bucket":"Blazing Blue Moon Cherry Bucket",
+  "item.cherrytinker.sun_cherryfuel_bucket":"Red Sun Sakura Bucket",
+
+  "block.cherrytinker.cherry_bush": "CherryPlant",
+  "block.cherrytinker.enchantedgold_block": "Block of Enchantedgold",
+  "block.cherrytinker.cherry_gem": "CherryGemstone",
+  "block.cherrytinker.deepslate_cherry_gem": "DeepslateCherryGemStone",
+
+  "material.cherrytinker.cherrygem": "Cherrygem",
+  "material.cherrytinker.enchantedgold": "Enchanted Gold",
+
+  "modifier.cherrytinker.cherrygemattack": "The power of cherry satiating",
+  "modifier.cherrytinker.cherrygemattack.flavor": "Cherry gems? Cherries are full!",
+  "modifier.cherrytinker.cherrygemattack.description": "When hunger is greater than half, the damage of satiety is increased by half per level entry",
+  "modifier.cherrytinker.recovery": "Cherry heals",
+  "modifier.cherrytinker.recovery.flavor": "Learn to heal",
+  "modifier.cherrytinker.recovery.description": "When attacked by an enemy, gain health regeneration equal to the level of the entry for 10 seconds",
+
+  "modifier.cherrytinker.egold_a": "Enchanted gold attack",
+  "modifier.cherrytinker.egold_a.flavor": "Enchanted gold attack power",
+  "modifier.cherrytinker.egold_a.description": "When health is greater than seventeen, the maximum health damage is increased by half for each level",
+  "modifier.cherrytinker.egold_p": "Enchanted gold protection",
+  "modifier.cherrytinker.egold_p.flavor": "The protective power of enchanted gold",
+  "modifier.cherrytinker.egold_p.description": "Does not take damage from enemies whose maximum health is less than yours, and when injured, gains instant healing and damage absorption of the same level for 10 secondsIt and deals 10 Dragon's Breath damage to enemies"
+
+}

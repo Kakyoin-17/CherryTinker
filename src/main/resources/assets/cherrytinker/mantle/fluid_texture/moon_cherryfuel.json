@@ -1,0 +1,5 @@
+{
+  "color": "FFFFFFFF",
+  "flowing": "cherrytinker:block/fluid/moon_cherryfuel/flowing",
+  "still": "cherrytinker:block/fluid/moon_cherryfuel/still"
+}

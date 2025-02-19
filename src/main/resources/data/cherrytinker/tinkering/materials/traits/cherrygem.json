@@ -1,0 +1,16 @@
+{
+  "default": [
+    {
+      "name": "cherrytinker:cherrygemattack",
+      "level": 1
+    }
+  ],
+  "perStat": {
+    "tconstruct:armor": [
+      {
+        "name": "cherrytinker:recovery",
+        "level": 1
+      }
+    ]
+  }
+}

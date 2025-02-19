@@ -1,0 +1,12 @@
+{
+  "type": "tconstruct:melting",
+  "ingredient": {
+    "item": "cherrytinker:cherrygem"
+  },
+  "result": {
+    "amount": 100,
+    "fluid": "cherrytinker:molten_cherrygem"
+  },
+  "temperature": 777,
+  "time":77
+}

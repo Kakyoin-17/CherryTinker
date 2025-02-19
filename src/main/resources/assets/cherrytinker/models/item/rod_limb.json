@@ -1,0 +1,7 @@
+{
+  "loader": "tconstruct:material",
+  "parent": "forge:item/default",
+  "textures": {
+    "texture": "cherrytinker:item/tool/rod/rod_limb"
+  }
+}

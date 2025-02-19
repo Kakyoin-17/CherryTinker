@@ -1,0 +1,9 @@
+{
+  "type": "tconstruct:material_fluid",
+  "fluid": {
+    "name": "cherrytinker:molten_cherrygem",
+    "amount": 100
+  },
+  "temperature": 777,
+  "output": "cherrytinker:cherrygem"
+}

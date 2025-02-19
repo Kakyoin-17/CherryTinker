@@ -1,0 +1,6 @@
+{
+  "parent": "item/generated",
+  "textures": {
+    "layer0": "cherrytinker:item/tool/cast/sk_blade_red_sand_cast"
+  }
+}

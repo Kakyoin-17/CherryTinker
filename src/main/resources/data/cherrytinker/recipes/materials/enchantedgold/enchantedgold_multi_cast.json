@@ -1,0 +1,13 @@
+{
+  "type": "tconstruct:casting_table",
+  "cast": {
+    "tag": "tconstruct:casts/multi_use/ingot"
+  },
+  "cast_consumed": false,
+  "fluid": {
+    "name": "cherrytinker:molten_enchantedgold",
+    "amount": 90
+  },
+  "result": "cherrytinker:enchantedgold",
+  "cooling_time": 177
+}

@@ -1,0 +1,30 @@
+{"type": "minecraft:crafting_shaped",
+  "pattern": [
+    "ABA",
+    "CDE",
+    "AFA"
+  ],
+  "key": {
+    "A": {
+      "item": "minecraft:experience_bottle"
+    },
+    "B": {
+      "item": "minecraft:amethyst_cluster"
+    },
+    "C": {
+      "item": "tconstruct:ichor_slime_crystal_cluster"
+    },
+    "D": {
+      "item": "minecraft:gold_block"
+    },
+    "E": {
+      "item": "tconstruct:sky_slime_crystal_cluster"
+    },
+    "F": {
+      "item": "tconstruct:earth_slime_crystal_cluster"
+    }
+  },
+  "result": {
+    "item": "cherrytinker:enchantedgold"
+  }
+}
