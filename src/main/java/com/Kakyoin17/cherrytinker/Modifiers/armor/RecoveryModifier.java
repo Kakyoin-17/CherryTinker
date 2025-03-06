@@ -18,7 +18,7 @@ public class RecoveryModifier extends ArmorModifier {
             if (ModifierLevel.getTotalArmorModifierlevel(entity, ModModifiers.recovery.getId()) > 0) {
                 int level =ModifierLevel.getTotalArmorModifierlevel(event.getEntity(),this.getId());
                 if (entity instanceof Player player) {
-                    entity.addEffect(new MobEffectInstance(MobEffects.REGENERATION,200,level));
+                    entity.addEffect(new MobEffectInstance(MobEffects.REGENERATION,200,Math.min(2,level)));
                     event.setAmount(event.getAmount());
                 }
             }

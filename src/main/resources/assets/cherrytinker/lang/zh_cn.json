@@ -44,7 +44,7 @@
   "modifier.cherrytinker.cherrygemattack.description": "当饥饿值大于一半时，每级词条增加饱食度一半的伤害",
   "modifier.cherrytinker.recovery": "樱愈",
   "modifier.cherrytinker.recovery.flavor": "学樱愈",
-  "modifier.cherrytinker.recovery.description": "受到敌人攻击获得等同于词条等级的生命恢复效果10秒",
+  "modifier.cherrytinker.recovery.description": "受到敌人攻击获得等同于词条等级的生命恢复效果10秒,最高三级",
 
   "modifier.cherrytinker.egold_a": "附魔金进攻",
   "modifier.cherrytinker.egold_a.flavor": "附魔金攻击之力",

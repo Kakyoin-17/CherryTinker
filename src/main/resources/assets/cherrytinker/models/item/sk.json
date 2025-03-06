@@ -10,8 +10,8 @@
   "modifier_roots": ["cherrytinker:item/tool/sk/modifiers/"],
   "parts": [
     { "name": "sk_head",    "index": 0 },
-    { "name": "sk_binding", "index": 2 },
-    { "name": "sk_handle",  "index": 1 }
+    { "name": "sk_binding", "index": 1 },
+    { "name": "sk_handle",  "index": 2 }
   ],
   "overrides": [{
     "predicate": { "tconstruct:charging": 2 },
