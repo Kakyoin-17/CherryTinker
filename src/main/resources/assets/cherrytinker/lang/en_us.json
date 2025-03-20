@@ -31,6 +31,10 @@
   "item.cherrytinker.moon_cherryfuel_bucket":"Blazing Blue Moon Cherry Bucket",
   "item.cherrytinker.sun_cherryfuel_bucket":"Red Sun Sakura Bucket",
 
+  "At night, facing east, aim at the magma block to the west and right-click on the block":"At night, facing east, aim at the magma block(not lava) to the west and right-click on the block",
+  "Facing east during the day, aim at the west block with Flame Blood, and right-click on the block": "Facing east during the day, aim at the west block with Flame Blood, and right-click on the block",
+  "Press SHIFT or CTRL for more info": "Press SHIFT or CTRL for more info",
+
   "block.cherrytinker.cherry_bush": "CherryPlant",
   "block.cherrytinker.enchantedgold_block": "Block of Enchantedgold",
   "block.cherrytinker.cherry_gem": "CherryGemstone",

@@ -36,6 +36,10 @@
   "block.cherrytinker.cherry_gem": "樱桃宝石矿石",
   "block.cherrytinker.deepslate_cherry_gem": "深层樱桃宝石矿石",
 
+  "At night, facing east, aim at the magma block to the west and right-click on the block":"在晚上面向东方, 对准西边一格是岩浆（不是熔岩）的方块右键",
+  "Facing east during the day, aim at the west block with Flame Blood, and right-click on the block": "白天面向东方, 对准西边一格是烈焰血的方块右键",
+  "Press SHIFT or CTRL for more info": "按 SHIFT 或 CTRL 获取更多信息",
+
   "material.cherrytinker.cherrygem": "樱桃宝石",
   "material.cherrytinker.enchantedgold": "附魔金",
 
