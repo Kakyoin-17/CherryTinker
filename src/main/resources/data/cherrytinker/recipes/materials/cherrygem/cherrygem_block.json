@@ -1,0 +1,12 @@
+{
+  "type": "tconstruct:melting",
+  "ingredient": {
+    "tag": "forge:storage_blocks/cherrygem_block"
+  },
+  "result": {
+    "amount": 810,
+    "fluid": "cherrytinker:molten_cherrygem"
+  },
+  "temperature": 777,
+  "time": 693
+}

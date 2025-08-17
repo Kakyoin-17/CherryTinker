@@ -2,6 +2,7 @@ package com.Kakyoin17.cherrytinker.registry;
 
 import com.Kakyoin17.cherrytinker.cherrytinker;
 import com.Kakyoin17.cherrytinker.custom.CherryBushBlockItem;
+import com.Kakyoin17.cherrytinker.custom.EGoldBlock;
 import net.minecraft.util.valueproviders.UniformInt;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.CreativeModeTab;
@@ -30,8 +31,9 @@ public class  ModBlocks {
     // 设置的内容都可以在properties下面找到，按住ctrl点击Properties可以看到。
     // tab是之前自己自己创建的tab
     public static final RegistryObject<Block> EnchantedGold_BLOCK = registerBlock("enchantedgold_block",
-            ()->new Block(BlockBehaviour.Properties.of(Material.METAL).strength(6f).requiresCorrectToolForDrops().lightLevel(value -> 15)), ModCreativeModeTab.CHERRYTINKER_TAB);
-
+            ()->new EGoldBlock(BlockBehaviour.Properties.of(Material.METAL).strength(6f).requiresCorrectToolForDrops().lightLevel(value -> 15)), ModCreativeModeTab.CHERRYTINKER_TAB);
+    public static final RegistryObject<Block> CherryGem_Block = registerBlock("cherrygem_block",
+            () -> new Block(BlockBehaviour.Properties.of(Material.METAL).strength(4f).requiresCorrectToolForDrops().lightLevel(value -> 7)),ModCreativeModeTab.CHERRYTINKER_TAB);
     // 注册一个矿物的方块，这里new的是一个Block的子类，这个类指明了是一个破坏后会掉落经验的Block
     // 如果是其他具有自己效果的Block，也可以自己去实现一个Block类。
     // 其中 new DropExperienceBlock 的第三个参数指明的是掉落经验值的范围。

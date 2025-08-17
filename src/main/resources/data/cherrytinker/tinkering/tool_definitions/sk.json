@@ -29,7 +29,7 @@
       "type": "tconstruct:base_stats",
       "stats": {
         "tconstruct:attack_damage": 5.0,
-        "tconstruct:attack_speed": 1.0
+        "tconstruct:attack_speed": 2.0
       }
     },
     {
@@ -41,18 +41,18 @@
     },
     {
       "type": "tconstruct:material_repair",
-      "durability": 200,
+      "durability": 400,
       "material": "tconstruct:flint"
     },
     {
       "type": "tconstruct:traits",
       "traits": [
         {
-          "level": 1,
+          "level": 2,
           "name": "tconstruct:reinforced"
         },
         {
-          "level": 1,
+          "level": 2,
           "name": "tconstruct:reach"
         }
       ]
