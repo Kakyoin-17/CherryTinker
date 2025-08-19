@@ -18,7 +18,7 @@ public class EGoldBlock extends Block {
     @Override
     public void stepOn(Level Level, BlockPos Pos, BlockState State, Entity Entity) {
         if(Entity instanceof Player) {
-            if (((Player) Entity).getFoodData().getFoodLevel()>0||!Level.isClientSide) {
+            if (!Level.isClientSide&&((Player) Entity).getFoodData().getFoodLevel()>0) {
                 ((Player) Entity).causeFoodExhaustion(4);
                 ((Player) Entity).giveExperiencePoints(1);
                 ((Player)Entity).addEffect(new MobEffectInstance(MobEffects.FIRE_RESISTANCE,1,1));

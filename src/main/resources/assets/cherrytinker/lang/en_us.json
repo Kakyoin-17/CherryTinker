@@ -11,7 +11,7 @@
   "item.cherrytinker.sk": "Straight knives",
   "item.cherrytinker.sk.description": "The straight knife is a melee weapon that is also effective against spider webs like a sword",
   "item.cherrytinker.pas": "Pickaxe axe",
-  "item.cherrytinker.pas.description": "The pickaxe is a multi-functional digging tool that combines the digging functions of a pickaxe, axe, and shovel, and can also right-click to debark trees",
+  "item.cherrytinker.pas.description": "The pickaxe is a multi-functional digging tool that combines the digging functions of a pickaxe, axe, and shovel, and can also right-click to debark trees,can also right-click to till the land.",
   "item.cherrytinker.rod": "Fishing Rod",
   "item.cherrytinker.rod.description": "A fishing rod that is stronger than the original fishing rod",
 
@@ -30,6 +30,7 @@
   "item.cherrytinker.cherrygem": "CherryGem",
   "item.cherrytinker.moon_cherryfuel_bucket":"Blazing Blue Moon Cherry Bucket",
   "item.cherrytinker.sun_cherryfuel_bucket":"Red Sun Sakura Bucket",
+  "item.cherrytinker.birthcrystal": "Birth Crystal",
 
   "At night, facing east, aim at the magma block to the west and right-click on the block":"At night, facing east, aim at the magma block(not lava) to the west and right-click on the block",
   "Facing east during the day, aim at the west block with Flame Blood, and right-click on the block": "Facing east during the day, aim at the west block with Flame Blood, and right-click on the block",
@@ -41,6 +42,7 @@
   "block.cherrytinker.deepslate_cherry_gem": "DeepslateCherryGemStone",
   "block.cherrytinker.cherrygem_block": "Block of cherrygem",
 
+  "material.cherrytinker.birthcrystal":"Birth Crystal",
   "material.cherrytinker.cherrygem": "Cherrygem",
   "material.cherrytinker.enchantedgold": "Enchanted Gold",
 
@@ -49,7 +51,7 @@
   "modifier.cherrytinker.cherrygemattack.description": "When hunger is greater than half, the damage of satiety is increased by half per level entry",
   "modifier.cherrytinker.recovery": "Cherry heals",
   "modifier.cherrytinker.recovery.flavor": "Learn to heal",
-  "modifier.cherrytinker.recovery.description": "When attacked by an enemy, gain health regeneration equal to the level of the entry for 10 seconds",
+  "modifier.cherrytinker.recovery.description": "When attacked by an enemy, gain a life recovery effect of (1 + Tier level) for 10 seconds. The maximum tier is 3, providing the highest level of life recovery.",
 
   "modifier.cherrytinker.egold_a": "Enchanted gold attack",
   "modifier.cherrytinker.egold_a.flavor": "Enchanted gold attack power",

@@ -15,9 +15,6 @@ import slimeknights.tconstruct.library.modifiers.hook.interaction.InventoryTickM
 public class Egold_P extends ArmorModifier {
     @Override
     public void LivingHurtEvent(LivingHurtEvent event) {
-        if (event.getSource().isFire()) {
-            event.setCanceled(true);
-        } else {
             if (event.getEntity() != null) {
                 LivingEntity entity = event.getEntity();
                 if (ModifierLevel.getTotalArmorModifierlevel(entity, ModModifiers.egold_p.getId()) > 0) {
@@ -26,16 +23,18 @@ public class Egold_P extends ArmorModifier {
                         if (enemy.getMaxHealth() < entity.getMaxHealth()) {
                             event.setCanceled(true);
                         } else {
-                            if (entity instanceof Player player) {
-                                enemy.hurt(new EntityDamageSource("egold", entity).bypassArmor(), 10);
+                            if (entity instanceof Player player ) {
+                                if (event.getSource() instanceof EntityDamageSource source && !source.isThorns()) {
+                                enemy.hurt(new EntityDamageSource("egold", entity).setThorns().bypassArmor(), 10);
                                 entity.addEffect(new MobEffectInstance(MobEffects.HEAL, 1, 1));
                                 entity.addEffect(new MobEffectInstance(MobEffects.ABSORPTION, 200, level - 1));
                                 event.setAmount(event.getAmount());
+                            }
                             }
                         }
                     }
                 }
             }
-        }
+
     }
 }

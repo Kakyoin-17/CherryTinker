@@ -11,7 +11,7 @@
   "item.cherrytinker.sk": "直刀",
   "item.cherrytinker.sk.description": "直刀是一种近战武器，同时像剑一样对蜘蛛网有效。",
   "item.cherrytinker.pas": "镐斧",
-  "item.cherrytinker.pas.description": "镐斧是一种多功能挖掘工具，同时结合了镐、斧、铲的挖掘功能，还可以右键给树剥皮。",
+  "item.cherrytinker.pas.description": "镐斧是一种多功能挖掘工具，同时结合了镐、斧、铲的挖掘功能，还可以右键给树剥皮,也可以右键耕耘土地。",
   "item.cherrytinker.rod": "钓竿",
   "item.cherrytinker.rod.description": "比原版钓竿更强的钓竿",
 
@@ -30,16 +30,19 @@
   "item.cherrytinker.cherrygem": "樱桃宝石",
   "item.cherrytinker.moon_cherryfuel_bucket":"炽蓝月樱桶",
   "item.cherrytinker.sun_cherryfuel_bucket":"焱红日樱桶",
+  "item.cherrytinker.birthcrystal": "创生水晶（尚未完成制作，无获取与用途）",
 
   "block.cherrytinker.cherry_bush": "樱桃植株",
   "block.cherrytinker.enchantedgold_block": "附魔金块",
   "block.cherrytinker.cherry_gem": "樱桃宝石矿石",
   "block.cherrytinker.deepslate_cherry_gem": "深层樱桃宝石矿石",
+  "block.cherrytinker.cherrygem_block": "樱桃宝石块",
 
   "At night, facing east, aim at the magma block to the west and right-click on the block":"在晚上面向东方, 对准西边一格是岩浆（不是熔岩）的方块右键",
   "Facing east during the day, aim at the west block with Flame Blood, and right-click on the block": "白天面向东方, 对准西边一格是烈焰血的方块右键",
   "Press SHIFT or CTRL for more info": "按 SHIFT 或 CTRL 获取更多信息",
 
+  "material.cherrytinker.birthcrystal":"创生水晶",
   "material.cherrytinker.cherrygem": "樱桃宝石",
   "material.cherrytinker.enchantedgold": "附魔金",
 
@@ -48,13 +51,21 @@
   "modifier.cherrytinker.cherrygemattack.description": "当饥饿值大于一半时，每级词条增加饱食度一半的伤害",
   "modifier.cherrytinker.recovery": "樱愈",
   "modifier.cherrytinker.recovery.flavor": "学樱愈",
-  "modifier.cherrytinker.recovery.description": "受到敌人攻击获得等同于词条等级的生命恢复效果10秒,最高三级",
+  "modifier.cherrytinker.recovery.description": "受到敌人攻击获得（1+词条等级）的生命恢复效果10秒,最高三级生命恢复",
 
   "modifier.cherrytinker.egold_a": "附魔金进攻",
   "modifier.cherrytinker.egold_a.flavor": "附魔金攻击之力",
   "modifier.cherrytinker.egold_a.description": "当生命值大于十七时，每级词条增加一半最大生命值伤害;攻击后对目标造成10倍词条等级的魔法伤害",
   "modifier.cherrytinker.egold_p": "附魔金防护",
   "modifier.cherrytinker.egold_p.flavor": "附魔金的防护之力",
-  "modifier.cherrytinker.egold_p.description": "不会受到最大生命小于你的敌人的伤害，受伤时获得与等同词条等级的伤害吸收10秒与瞬间治疗,并对敌人造成10点龙息伤害"
+  "modifier.cherrytinker.egold_p.description": "不会受到最大生命小于你的敌人的伤害，受伤时获得与等同词条等级的伤害吸收10秒与瞬间治疗,并对敌人造成10点龙息伤害",
+
+  "modifier.cherrytinker.fluidentity": "液流铸形",
+  "modifier.cherrytinker.fluidentity.flavor": "以其液，铸其形",
+  "modifier.cherrytinker.fluidentity.description": "近战击中后召唤对应实体，消耗工具耐久与内部液体，部分实体熔炼会告诉你答案",
+
+  "modifier.cherrytinker.birthcrystalarmor": "创生护盾",
+  "modifier.cherrytinker.birthcrystalarmor.flavor": "坚如磐石",
+  "modifier.cherrytinker.birthcrystalarmor.description": "获得随时间推移会增长的护盾条，受伤时消耗护盾条抵消伤害，护盾条数值与增长速度与护甲韧性以及词条等级相关"
 
 }
