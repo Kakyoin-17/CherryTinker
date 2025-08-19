@@ -42,7 +42,7 @@ public class ModItems {
     public static final RegistryObject<ContainerFoodItem.FluidContainerFoodItem> cherryJuiceBottle =ITEMS.register("cherry_juice",
             () -> new ContainerFoodItem.FluidContainerFoodItem(new Item.Properties()
                     .food(new FoodProperties.Builder().nutrition(3).saturationMod(2f).alwaysEat()
-                            .effect(new MobEffectInstance(MobEffects.HEAL,1),1.0F).build()).stacksTo(1).tab(ModCreativeModeTab.CHERRYTINKER_TAB),
+                            .effect(new MobEffectInstance(MobEffects.HEAL,1),1.0F).build()).tab(ModCreativeModeTab.CHERRYTINKER_TAB),
                     () -> new FluidStack(ModFluids.cherryJuice.get(), FluidValues.BOTTLE)));
     public static final RegistryObject<Item> EnchantedGoldenCarrot = ITEMS.register("enchanted_golden_carrot",
             () -> new EnchantedGoldenCarrotItem(new Item.Properties().tab(ModCreativeModeTab.CHERRYTINKER_TAB)

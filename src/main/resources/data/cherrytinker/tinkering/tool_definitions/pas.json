@@ -15,9 +15,8 @@
         {
           "item": "tconstruct:small_axe_head",
           "scale": 0.75
-        }
-
-
+        },
+        "tconstruct:tool_binding"
       ]
     },
     {
@@ -38,21 +37,26 @@
         {
           "type": "tconstruct:random",
           "tier": 1
+        },
+        {
+          "type": "tconstruct:random",
+          "tier": 1
         }
+
       ]
     },
     {
       "type": "tconstruct:base_stats",
       "stats": {
-        "tconstruct:attack_damage": 3.0,
+        "tconstruct:attack_damage": 1.0,
         "tconstruct:attack_speed": 1.0
       }
     },
     {
       "type": "tconstruct:multiply_stats",
       "multipliers": {
-        "tconstruct:attack_damage": 1.0,
-        "tconstruct:durability": 1.5,
+        "tconstruct:attack_damage": 1.5,
+        "tconstruct:durability": 2,
         "tconstruct:mining_speed": 1.0
       }
     },
@@ -69,6 +73,10 @@
         {
           "level": 1,
           "name": "tconstruct:stripping"
+        },
+        {
+          "level": 1,
+          "name": "tconstruct:tilling"
         }
       ]
     },

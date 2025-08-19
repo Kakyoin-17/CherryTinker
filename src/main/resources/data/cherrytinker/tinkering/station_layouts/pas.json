@@ -18,8 +18,8 @@
     {
       "icon": "tconstruct:small_blade",
       "translation_key": "item.tconstruct.small_blade",
-      "x": 44,
-      "y": 29,
+      "x": 45,
+      "y": 26,
       "filter": {
         "item": "tconstruct:small_blade"
       }
@@ -27,8 +27,8 @@
     {
       "icon": "tconstruct:tough_handle",
       "translation_key": "item.tconstruct.tough_handle",
-      "x": 21,
-      "y": 52,
+      "x": 7,
+      "y": 62,
       "filter": {
         "item": "tconstruct:tough_handle"
       }
@@ -36,8 +36,8 @@
     {
       "icon": "tconstruct:pick_head",
       "translation_key": "item.tconstruct.pick_head",
-      "x": 50,
-      "y": 48,
+      "x": 45,
+      "y": 46,
       "filter": {
         "item": "tconstruct:pick_head"
       }
@@ -46,9 +46,18 @@
       "icon": "tconstruct:small_axe_head",
       "translation_key": "item.tconstruct.small_axe_head",
       "x": 25,
-      "y": 20,
+      "y": 26,
       "filter": {
         "item": "tconstruct:small_axe_head"
+      }
+    },
+    {
+      "icon": "tconstruct:tool_binding",
+      "translation_key": "item.tconstruct.tool_binding",
+      "x": 25,
+      "y": 46,
+      "filter": {
+        "item": "tconstruct:tool_binding"
       }
     }
     

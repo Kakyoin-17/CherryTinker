@@ -5,6 +5,8 @@
     {"path": "cherrytinker:item/tool/pas/head1", "stat_type": "tconstruct:head"},
     {"path": "cherrytinker:item/tool/pas/head2", "stat_type": "tconstruct:head"},
     {"path": "cherrytinker:item/tool/pas/head3", "stat_type": "tconstruct:head"},
+    {"path": "cherrytinker:item/tool/pas/extra", "stat_type": "tconstruct:binding"},
+
 
     {"path": "cherrytinker:item/tool/sk/sk_head","stat_type": "tconstruct:head"},
     {"path": "cherrytinker:item/tool/sk/sk_binding","stat_type": "tconstruct:binding"},
