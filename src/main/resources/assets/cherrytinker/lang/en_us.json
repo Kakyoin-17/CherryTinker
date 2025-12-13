@@ -33,9 +33,8 @@
   "item.cherrytinker.birthcrystal": "Birth Crystal",
   "item.cherrytinker.monster_cluster": "Monster Cluster",
 
-  "At night, facing east, aim at the magma block to the west and right-click on the block":"At night, facing east, aim at the magma block(not lava) to the west and right-click on the block",
-  "Facing east during the day, aim at the west block with Flame Blood, and right-click on the block": "Facing east during the day, aim at the west block with Flame Blood, and right-click on the block",
-  "Press SHIFT or CTRL for more info": "Press SHIFT or CTRL for more info",
+  "tooltip.yourmod.cherry_gem.day_transform": "Try throwing it into the blazing blood during the day",
+  "tooltip.yourmod.cherry_gem.night_transform": "Try throwing it into magma at night and see",
 
   "block.cherrytinker.cherry_bush": "CherryPlant",
   "block.cherrytinker.enchantedgold_block": "Block of Enchantedgold",

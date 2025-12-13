@@ -1,81 +1,90 @@
 package com.Kakyoin17.cherrytinker.custom;
 
+import com.Kakyoin17.cherrytinker.registry.ModBlocks;
 import com.Kakyoin17.cherrytinker.registry.ModFluids;
-import com.Kakyoin17.cherrytinker.until.RainbowText;
 import net.minecraft.ChatFormatting;
-import net.minecraft.client.gui.screens.Screen;
 import net.minecraft.core.BlockPos;
 import net.minecraft.network.chat.Component;
-import net.minecraft.world.InteractionResult;
-import net.minecraft.world.entity.player.Player;
+import net.minecraft.resources.ResourceLocation;
+import net.minecraft.sounds.SoundEvents;
+import net.minecraft.sounds.SoundSource;
+import net.minecraft.world.entity.item.ItemEntity;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.TooltipFlag;
-import net.minecraft.world.item.context.UseOnContext;
 import net.minecraft.world.level.Level;
+import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.state.BlockState;
+import net.minecraft.world.level.material.FluidState;
+import net.minecraftforge.registries.ForgeRegistries;
 import org.jetbrains.annotations.Nullable;
-import slimeknights.tconstruct.fluids.TinkerFluids;
 
+import java.awt.*;
 import java.util.List;
 
-public class CherryGemItem extends Item  {
-
+public class CherryGemItem extends Item {
+    private static final ResourceLocation TINKERS_BLAZING_BLOOD = new ResourceLocation("tconstruct", "blazing_blood");
+    private static final ResourceLocation TINKERS_MAGMA = new ResourceLocation("tconstruct", "magma"); // 如果不对，进游戏F3+H查看
     public CherryGemItem(Properties properties) {
         super(properties);
     }
-
-    public InteractionResult useOn(UseOnContext context){
-        Level level = context.getLevel();
-        BlockPos blockPos1 = context.getClickedPos().west(1);
-        BlockState blockstate1 = level.getBlockState(blockPos1);
-        BlockPos blockPos2 = context.getClickedPos().west(1);
-        BlockState blockstate2 = level.getBlockState(blockPos2);
-        ItemStack itemStack = context.getItemInHand();
-        long timeOfDay = level.getDayTime();
-        if (context.getPlayer() instanceof Player){
-            if (blockstate1 == TinkerFluids.blazingBlood.getBlock().defaultBlockState()){
-                if (timeOfDay%24000<13000){
-                    itemStack.shrink(1);
-                    level.setBlockAndUpdate(blockPos1,ModFluids.suncherryfuel.getBlock().defaultBlockState());
-                }return InteractionResult.CONSUME;
+    @Override
+    public boolean onEntityItemUpdate(ItemStack stack, ItemEntity entity) {
+        Level level = entity.level;
+        if (!level.isClientSide) {
+            if (entity.tickCount % 4 == 0) {
+                checkConversion(level, entity);
             }
-            if (blockstate2 == TinkerFluids.magma.getBlock().defaultBlockState()){
-                if (timeOfDay%24000>12000){
-                    itemStack.shrink(1);
-                    level.setBlockAndUpdate(blockPos2,ModFluids.mooncherryfuel.getBlock().defaultBlockState());
-                }return InteractionResult.CONSUME;
+        }
+        return super.onEntityItemUpdate(stack, entity);
+    }
+    private void checkConversion(Level level, ItemEntity entity) {
+        BlockPos pos = entity.blockPosition();
+        FluidState fluidState = level.getFluidState(pos);
+        if (fluidState.isEmpty()) {
+            BlockPos below = pos.below();
+            FluidState belowState = level.getFluidState(below);
+            if (!belowState.isEmpty()) {
+                pos = below;
+                fluidState = belowState;
             }
-
-            }
-        return  InteractionResult.CONSUME;
+        }
+        if (!fluidState.isSource()) {
+            return;
+        }
+        ResourceLocation currentFluidId = ForgeRegistries.FLUIDS.getKey(fluidState.getType());
+        if (currentFluidId == null) return;
+        long time = level.getDayTime() % 24000;
+        boolean isDay = time >= 0 && time < 13000; // 稍微放宽一点白天的判定
+        Block targetBlock = null;
+        if (isDay && currentFluidId.equals(TINKERS_BLAZING_BLOOD)) {
+            targetBlock = ModFluids.suncherryfuel.getBlock();
+        }
+        else if (!isDay && currentFluidId.equals(TINKERS_MAGMA)) {
+            targetBlock = ModFluids.mooncherryfuel.getBlock();
+        }
+        if (targetBlock != null) {
+            performTransformation(level, pos, entity, targetBlock);
+        }
+    }
+    private void performTransformation(Level level, BlockPos pos, ItemEntity entity, Block targetBlock) {
+        level.setBlock(pos, targetBlock.defaultBlockState(), 3);
+        level.playSound(null, pos, SoundEvents.LAVA_EXTINGUISH, SoundSource.BLOCKS, 0.5F, 1.0F);
+        ItemStack stack = entity.getItem();
+        if (stack.getCount() > 1) {
+            stack.shrink(1);
+            entity.setPos(entity.getX(), pos.getY() + 1.2, entity.getZ());
+            entity.setDeltaMovement(0, 0.25, 0);
+            entity.setPickUpDelay(20);
+        } else {
+            entity.discard();
+        }
     }
 
-    public void appendHoverText(ItemStack itemStack, @Nullable Level level, List<Component> components, TooltipFlag tooltipFlag){
-        if(Screen.hasShiftDown()){
-            components.add(Component.translatable(
-                    ("At night, facing east, aim at the magma block to the west and right-click on the block")).withStyle(ChatFormatting.AQUA));}
-        else if(Screen.hasControlDown()){
-            components.add(Component.translatable(
-                    ("Facing east during the day, aim at the west block with Flame Blood, and right-click on the block")).withStyle(ChatFormatting.GOLD));
-
-    }else {
-            components.add(Component.translatable("Press SHIFT or CTRL for more info").withStyle(ChatFormatting.YELLOW));
-        }
-        super.appendHoverText(itemStack,level,components,tooltipFlag);
-    }}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+    @Override
+    public void appendHoverText(ItemStack itemStack, @Nullable Level level, List<Component> component, TooltipFlag tooltipFlag) {
+        super.appendHoverText(itemStack, level, component, tooltipFlag);
+        component.add(Component.translatable("tooltip.yourmod.cherry_gem.day_transform").withStyle(ChatFormatting.GOLD));
+        component.add(Component.translatable("tooltip.yourmod.cherry_gem.night_transform") .withStyle(ChatFormatting.BLUE));
+    }
+}
