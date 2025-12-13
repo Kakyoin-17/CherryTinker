@@ -31,6 +31,7 @@
   "item.cherrytinker.moon_cherryfuel_bucket":"炽蓝月樱桶",
   "item.cherrytinker.sun_cherryfuel_bucket":"焱红日樱桶",
   "item.cherrytinker.birthcrystal": "创生水晶（尚未完成制作，无获取与用途）",
+  "item.cherrytinker.monster_cluster": "怪物团簇",
 
   "block.cherrytinker.cherry_bush": "樱桃植株",
   "block.cherrytinker.enchantedgold_block": "附魔金块",
@@ -45,6 +46,7 @@
   "material.cherrytinker.birthcrystal":"创生水晶",
   "material.cherrytinker.cherrygem": "樱桃宝石",
   "material.cherrytinker.enchantedgold": "附魔金",
+  "material.cherrytinker.monster": "怪物",
 
   "modifier.cherrytinker.cherrygemattack": "樱桃饱食之力",
   "modifier.cherrytinker.cherrygemattack.flavor": "樱桃宝石？樱桃饱食!",
@@ -66,6 +68,15 @@
 
   "modifier.cherrytinker.birthcrystalarmor": "创生护盾",
   "modifier.cherrytinker.birthcrystalarmor.flavor": "坚如磐石",
-  "modifier.cherrytinker.birthcrystalarmor.description": "获得随时间推移会增长的护盾条，受伤时消耗护盾条抵消伤害，护盾条数值与增长速度与护甲韧性以及词条等级相关"
+  "modifier.cherrytinker.birthcrystalarmor.description": "获得随时间推移会增长的护盾条，受伤时消耗护盾条抵消伤害，护盾条数值与增长速度与护甲韧性以及词条等级相关",
+
+  "modifier.cherrytinker.autofishing": "自动钓鱼",
+  "modifier.cherrytinker.autofishing.flavor": "auto-fishing open",
+  "modifier.cherrytinker.autofishing.description": "当鱼咬钩时候会自动收杆,未抛竿会自动抛竿",
+
+  "modifier.cherrytinker.monster": "怪物",
+  "modifier.cherrytinker.monster.flavor": "短暂的忠诚",
+  "modifier.cherrytinker.monster.description": "近战攻击命中目标后，召唤随机怪物攻击目标，随机到的怪物种类根据等级逐渐变多（僵尸，骷髅，蜘蛛，苦力怕，末影人）",
+  "cherry_monster_creeper": "哈亚苦"
 
 }

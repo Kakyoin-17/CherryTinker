@@ -56,6 +56,9 @@ public class ModItems {
     public static final RegistryObject<Item> EnchantedGold  = ITEMS.register("enchantedgold" ,
             () -> new EnchantedgoldItem(new Item.Properties().tab(ModCreativeModeTab.CHERRYTINKER_TAB)
                     .rarity(Rarity.EPIC)));
+    public static final RegistryObject<Item> Monster_Cluster  = ITEMS.register("monster_cluster" ,
+            () -> new Item(new Item.Properties().tab(ModCreativeModeTab.CHERRYTINKER_TAB)));
+
     //流体桶
     public static final RegistryObject<Item> MoltenEnchantedgoldBucket = ITEMS.register("molten_enchantedgold_bucket",
             () -> new MoltenEnchantedgoldBucketItem(ModFluids.moltenEnchantedgold.get(),

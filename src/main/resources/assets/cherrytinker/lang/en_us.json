@@ -31,6 +31,7 @@
   "item.cherrytinker.moon_cherryfuel_bucket":"Blazing Blue Moon Cherry Bucket",
   "item.cherrytinker.sun_cherryfuel_bucket":"Red Sun Sakura Bucket",
   "item.cherrytinker.birthcrystal": "Birth Crystal",
+  "item.cherrytinker.monster_cluster": "Monster Cluster",
 
   "At night, facing east, aim at the magma block to the west and right-click on the block":"At night, facing east, aim at the magma block(not lava) to the west and right-click on the block",
   "Facing east during the day, aim at the west block with Flame Blood, and right-click on the block": "Facing east during the day, aim at the west block with Flame Blood, and right-click on the block",
@@ -45,6 +46,7 @@
   "material.cherrytinker.birthcrystal":"Birth Crystal",
   "material.cherrytinker.cherrygem": "Cherrygem",
   "material.cherrytinker.enchantedgold": "Enchanted Gold",
+  "material.cherrytinker.monster": "Monster",
 
   "modifier.cherrytinker.cherrygemattack": "The power of cherry satiating",
   "modifier.cherrytinker.cherrygemattack.flavor": "Cherry gems? Cherries are full!",
@@ -58,6 +60,15 @@
   "modifier.cherrytinker.egold_a.description": "When health is greater than seventeen, the maximum health damage is increased by half for each level",
   "modifier.cherrytinker.egold_p": "Enchanted gold protection",
   "modifier.cherrytinker.egold_p.flavor": "The protective power of enchanted gold",
-  "modifier.cherrytinker.egold_p.description": "Does not take damage from enemies whose maximum health is less than yours, and when injured, gains instant healing and damage absorption of the same level for 10 secondsIt and deals 10 Dragon's Breath damage to enemies"
+  "modifier.cherrytinker.egold_p.description": "Does not take damage from enemies whose maximum health is less than yours, and when injured, gains instant healing and damage absorption of the same level for 10 secondsIt and deals 10 Dragon's Breath damage to enemies",
+
+  "modifier.cherrytinker.autofishing": "Auto Fishing",
+  "modifier.cherrytinker.autofishing.flavor": "auto-fishing open",
+  "modifier.cherrytinker.autofishing.description": "The rod will automatically reel in when a fish bites, and it will automatically cast if it hasn't been cast yet.",
+
+  "modifier.cherrytinker.monster": "Monster",
+  "modifier.cherrytinker.monster.flavor": "Fleeting loyalty",
+  "modifier.cherrytinker.monster.description": "After a melee attack hits the target, a random monster is summoned to attack the target. The types of monsters that can appear increase with level (zombie, skeleton, spider, creeper, enderman).",
+  "cherry_monster_creeper": "Fake Creeper"
 
 }

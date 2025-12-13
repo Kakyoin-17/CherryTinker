@@ -35,7 +35,7 @@ public class CherryGemItem extends Item  {
         long timeOfDay = level.getDayTime();
         if (context.getPlayer() instanceof Player){
             if (blockstate1 == TinkerFluids.blazingBlood.getBlock().defaultBlockState()){
-                if ((timeOfDay/12000)/2==0){
+                if (timeOfDay%24000<13000){
                     itemStack.shrink(1);
                     level.setBlockAndUpdate(blockPos1,ModFluids.suncherryfuel.getBlock().defaultBlockState());
                 }return InteractionResult.CONSUME;
