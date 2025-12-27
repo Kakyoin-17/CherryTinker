@@ -1,6 +1,6 @@
 package com.kakyoin17.cherrytinker.CustomItems;
 
-import com.kakyoin17.cherrytinker.util.RGBRainbowText;
+import com.kakyoin17.cherrytinker.util.ThemedRGBText;
 import net.minecraft.network.chat.Component;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemStack;
@@ -18,6 +18,6 @@ public class Cherry extends Item {
 
     @Override
     public void appendHoverText(ItemStack itemStack, @Nullable Level level, List<Component> components, TooltipFlag tooltipFlag) {
-        components.add(RGBRainbowText.makeColour17("Cherry is best"));
+        components.add(ThemedRGBText.themeRoyal("Cherry is best"));
     }
 }
