@@ -1,0 +1,7 @@
+{
+  "camera": "cherrytinker:block/fluid/sun_cherryfuel/camera",
+  "camera_opacity": 0.1,
+  "color": "FFFFFFFF",
+  "flowing": "cherrytinker:block/fluid/sun_cherryfuel/flowing",
+  "still": "cherrytinker:block/fluid/sun_cherryfuel/still"
+}

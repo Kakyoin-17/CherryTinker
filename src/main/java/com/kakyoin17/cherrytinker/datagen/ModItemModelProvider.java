@@ -16,5 +16,9 @@ public class ModItemModelProvider extends ItemModelProvider {
     protected void registerModels() {
         //
         basicItem(ModItems.CHERRY.get());
+        basicItem(ModItems.CHERRY_JUICE.get());
+        basicItem(ModItems.ENCHANTED_GOLDEN_CARROT.get());
+        basicItem(ModItems.ENCHANTEDGOLD.get());
+        basicItem(ModItems.MONSTER_CLUSTER.get());
     }
 }

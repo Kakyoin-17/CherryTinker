@@ -1,0 +1,12 @@
+{
+  "type": "tconstruct:melting",
+  "ingredient": {
+    "item": "cherrytinker:cherry"
+  },
+  "result": {
+    "amount": 250,
+    "fluid": "cherrytinker:cherry_juice"
+  },
+  "temperature": 200,
+  "time":20
+}

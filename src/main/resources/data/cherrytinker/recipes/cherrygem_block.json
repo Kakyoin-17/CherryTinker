@@ -1,0 +1,36 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "building",
+  "ingredients": [
+    {
+      "item": "cherrytinker:cherrygem"
+    },
+    {
+      "item": "cherrytinker:cherrygem"
+    },
+    {
+      "item": "cherrytinker:cherrygem"
+    },
+    {
+      "item": "cherrytinker:cherrygem"
+    },
+    {
+      "item": "cherrytinker:cherrygem"
+    },
+    {
+      "item": "cherrytinker:cherrygem"
+    },
+    {
+      "item": "cherrytinker:cherrygem"
+    },
+    {
+      "item": "cherrytinker:cherrygem"
+    },
+    {
+      "item": "cherrytinker:cherrygem"
+    }
+  ],
+  "result": {
+    "item": "cherrytinker:cherrygem_block"
+  }
+}

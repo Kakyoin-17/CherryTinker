@@ -1,7 +1,6 @@
 package com.kakyoin17.cherrytinker;
 
-import com.kakyoin17.cherrytinker.content.ModCreativeTabs;
-import com.kakyoin17.cherrytinker.content.ModItems;
+import com.kakyoin17.cherrytinker.content.*;
 import com.mojang.logging.LogUtils;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.eventbus.api.IEventBus;
@@ -23,8 +22,12 @@ public class Cherrytinker {
 
 
         ModItems.register(modEventBus);
-        ModCreativeTabs.register(modEventBus);
+        ModItems.CAST.register(modEventBus);
+        ModBlocks.register(modEventBus);
+        ModFluids.FLUIDS.register(modEventBus);
 
+        ModCreativeTabs.register(modEventBus);
+        ModModifiers.MODIFIERS.register(modEventBus);
 
         MinecraftForge.EVENT_BUS.register(this);
     }

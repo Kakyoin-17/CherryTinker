@@ -1,0 +1,16 @@
+{
+  "default": [
+    {
+      "name": "cherrytinker:egold_a",
+      "level": 1
+    }
+  ],
+  "perStat": {
+    "tconstruct:armor": [
+      {
+        "name": "cherrytinker:egold_p",
+        "level": 1
+      }
+    ]
+  }
+}

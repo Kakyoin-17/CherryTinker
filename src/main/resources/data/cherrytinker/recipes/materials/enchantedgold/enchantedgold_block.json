@@ -1,0 +1,12 @@
+{
+  "type": "tconstruct:melting",
+  "ingredient": {
+    "tag": "forge:storage_blocks/enchantedgold_block"
+  },
+  "result": {
+    "amount": 810,
+    "fluid": "cherrytinker:molten_enchantedgold"
+  },
+  "temperature": 1500,
+  "time": 900
+}

@@ -98,4 +98,5 @@ public class ThemedRGBText {
     public static MutableComponent themeEnchant(String input) {
         return apply(input, PALETTE_ENCHANT, 500, 0.15);
     }
+
 }

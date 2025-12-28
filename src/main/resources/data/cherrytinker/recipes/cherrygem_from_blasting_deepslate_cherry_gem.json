@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:blasting",
+  "cookingtime": 100,
+  "experience": 1,
+  "group": "cherrygem",
+  "ingredient": {
+    "item": "cherrytinker:deepslate_cherry_gem"
+  },
+  "result": "cherrytinker:cherrygem"
+
+}

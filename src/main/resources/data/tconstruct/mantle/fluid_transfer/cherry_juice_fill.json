@@ -1,0 +1,11 @@
+{
+  "type": "mantle:fill_item",
+  "filled": "cherrytinker:cherry_juice",
+  "fluid": {
+    "amount": 250,
+    "name": "cherrytinker:cherry_juice"
+  },
+  "input": {
+    "item": "minecraft:glass_bottle"
+  }
+}

@@ -1,0 +1,7 @@
+{
+  "camera": "tconstruct:block/fluid/molten/camera",
+  "camera_opacity": 0.1,
+  "color": "FFE22F3A",
+  "flowing": "tconstruct:block/fluid/molten/flowing",
+  "still": "tconstruct:block/fluid/molten/still"
+}

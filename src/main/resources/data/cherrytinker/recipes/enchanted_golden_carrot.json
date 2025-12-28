@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "A": {
+      "item": "minecraft:golden_carrot"
+    },
+    "B": {
+      "item": "cherrytinker:enchantedgold"
+    }
+  },
+  "pattern": [
+    "AAA",
+    "ABA",
+    "AAA"
+  ],
+  "result": {
+    "count": 8,
+    "item": "cherrytinker:enchanted_golden_carrot"
+  },
+  "show_notification": true
+}
