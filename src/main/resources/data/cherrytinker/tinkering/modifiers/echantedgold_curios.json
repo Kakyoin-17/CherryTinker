@@ -1,0 +1,12 @@
+{
+  "type": "tconstruct:composable",
+  "modules": [
+    {
+      "type": "tinkers_ingenuity:curio_attribute_adder",
+      "name": "tinkers_ingenuity:extra_health",
+      "attribute": "minecraft:generic.max_health",
+      "operation": "addition",
+      "amount": 17
+    }
+  ]
+}

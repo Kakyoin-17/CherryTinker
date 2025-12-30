@@ -11,6 +11,12 @@
         "name": "cherrytinker:egold_p",
         "level": 1
       }
+    ],
+    "tinkers_ingenuity:curio": [
+      {
+        "level": 1,
+        "name": "cherrytinker:echantedgold_curios"
+      }
     ]
   }
 }

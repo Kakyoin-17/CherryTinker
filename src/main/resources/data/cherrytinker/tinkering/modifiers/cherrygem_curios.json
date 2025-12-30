@@ -1,0 +1,13 @@
+{
+  "type": "tconstruct:composable",
+  "modules": [
+    {
+      "type": "tinkers_ingenuity:curio_after_attack",
+      "attacker": "mantle:any",
+      "target": "mantle:any",
+      "action": "heal_entity",
+      "amount": 0.5,
+      "crit_bonus": true
+    }
+  ]
+}

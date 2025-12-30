@@ -54,6 +54,14 @@
       "durability": 666,
       "knockback_resistance": 0.5,
       "toughness": 7
+    },
+    "tinkers_ingenuity:curio_extra": {},
+    "tinkers_ingenuity:curio_main": {
+      "curio_armor": 0.77,
+      "curio_max_health": 17.0,
+      "curio_melee_attack": 0.77,
+      "curio_movement_speed": 0.77,
+      "curio_projectile_attack": 0.77
     }
   }
 }
