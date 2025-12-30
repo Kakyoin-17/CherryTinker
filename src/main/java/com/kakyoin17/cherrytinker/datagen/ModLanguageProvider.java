@@ -77,10 +77,16 @@ public class ModLanguageProvider extends LanguageProvider {
        add("modifier.cherrytinker.egold_a.description","Block damage from enemies with less maximum life than you, gain damage absorption for 10 seconds equal to the level of the corresponding attribute when injured, receive instant healing, and deal 10 points of Dragon Breath damage to enemies.");
        add("modifier.cherrytinker.egold_p","Enchanted gold protection");
        add("modifier.cherrytinker.egold_p.flavor", "The protective power of enchanted gold");
-        add("modifier.cherrytinker.egold_p.description", "Block damage from enemies whose maximum life is lower than yours. When injured, gain damage absorption equal to the level of the corresponding attribute for 10 seconds and instant healing, and deal 10 points of dragon breath damage to enemies.");
+       add("modifier.cherrytinker.egold_p.description", "Block damage from enemies whose maximum life is lower than yours. When injured, gain damage absorption equal to the level of the corresponding attribute for 10 seconds and instant healing, and deal 10 points of dragon breath damage to enemies.");
        add("modifier.cherrytinker.monster", "Monster");
        add("modifier.cherrytinker.monster.flavor","Fleeting loyalty");
        add("modifier.cherrytinker.monster.description", "After a melee attack hits the target, a random monster is summoned to attack the target. The types of monsters that can appear increase with level (zombie, skeleton, spider, creeper, enderman).");
+       add("modifier.cherrygem_curios","Life-steal attack");
+       add("modifier.cherrygem_curios.flavor","A little bit of healing");
+       add("modifier.cherrygem_curios.description","Restores 0.5 health with each attack");
+       add("modifier.enchantedgold_curios","超振奋");
+       add("modifier.enchantedgold.flavor","Super excited");
+       add("modifier.enchantedgold.description","+17 Maximum Health");
     }
     //中文
     private void addChinese() {
@@ -142,10 +148,12 @@ public class ModLanguageProvider extends LanguageProvider {
         add("modifier.cherrytinker.monster", "怪物");
         add("modifier.cherrytinker.monster.flavor","短暂的忠诚");
         add("modifier.cherrytinker.monster.description", "近战攻击命中目标后，召唤随机怪物攻击目标，随机到的怪物种类根据等级逐渐变多（僵尸，骷髅，蜘蛛，苦力怕，末影人）");
-
-
-
-
+        add("modifier.cherrygem_curios","愈击");
+        add("modifier.cherrygem_curios.flavor","小小的回血");
+        add("modifier.cherrygem_curios.description","每次攻击回复0.5生命");
+        add("modifier.enchantedgold_curios","超振奋");
+        add("modifier.enchantedgold.flavor","附魔金的振奋之力");
+        add("modifier.enchantedgold.description","增加十七点最大生命");
 
     }
 }
