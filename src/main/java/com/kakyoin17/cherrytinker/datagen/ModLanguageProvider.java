@@ -68,10 +68,10 @@ public class ModLanguageProvider extends LanguageProvider {
        add("material.cherrytinker.monster", "Monster");
        add("modifier.cherrytinker.cherrygemattack", "The power of cherry satiating");
        add("modifier.cherrytinker.cherrygemattack.flavor", "Cherry gems? Cherries are full!");
-       add("modifier.cherrytinker.cherrygemattack.description","When hunger is greater than half, the damage of satiety is increased by half per level entry");
+       add("modifier.cherrytinker.cherrygemattack.description"," The damage of satiety is increased by half per level entry");
        add("modifier.cherrytinker.recovery","Cherry heals");
        add("modifier.cherrytinker.recovery.flavor","Learn to heal");
-       add("modifier.cherrytinker.recovery.description", "Recover health based on the level of the attribute when attacked by enemies for 10 seconds, up to level 3 health recovery");
+       add("modifier.cherrytinker.recovery.description", "Recover health based on the level of the attribute when attacked by enemies for 10 seconds, up to level 4 health recovery");
        add("modifier.cherrytinker.egold_a", "Enchanted gold attack");
        add("modifier.cherrytinker.egold_a.flavor","Enchanted gold attack power");
        add("modifier.cherrytinker.egold_a.description","Block damage from enemies with less maximum life than you, gain damage absorption for 10 seconds equal to the level of the corresponding attribute when injured, receive instant healing, and deal 10 points of Dragon Breath damage to enemies.");
@@ -135,10 +135,10 @@ public class ModLanguageProvider extends LanguageProvider {
         add("material.cherrytinker.monster", "怪物");
         add("modifier.cherrytinker.cherrygemattack", "樱桃饱食之力");
         add("modifier.cherrytinker.cherrygemattack.flavor", "樱桃宝石？樱桃饱食!");
-        add("modifier.cherrytinker.cherrygemattack.description","当饥饿值大于一半时，每级词条增加饱食度一半的伤害");
+        add("modifier.cherrytinker.cherrygemattack.description","每级词条增加饱食度一半的伤害");
         add("modifier.cherrytinker.recovery","樱愈");
         add("modifier.cherrytinker.recovery.flavor","学樱愈");
-        add("modifier.cherrytinker.recovery.description", "受到敌人攻击获得词条等级的生命恢复效果10秒,最高三级生命恢复");
+        add("modifier.cherrytinker.recovery.description", "受到敌人攻击获得词条等级的生命恢复效果10秒,最高四级生命恢复");
         add("modifier.cherrytinker.egold_a", "附魔金进攻");
         add("modifier.cherrytinker.egold_a.flavor","附魔金攻击之力");
         add("modifier.cherrytinker.egold_a.description","每级词条增加你最大生命值一半的伤害;同时攻击后对目标造成10魔法伤害");
