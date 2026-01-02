@@ -6,9 +6,16 @@ import net.minecraft.data.PackOutput;
 import net.minecraft.data.recipes.*;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.item.Items;
+import net.minecraftforge.common.Tags;
+import slimeknights.tconstruct.common.TinkerTags;
+import slimeknights.tconstruct.library.modifiers.ModifierId;
+import slimeknights.tconstruct.library.recipe.modifiers.adding.ModifierRecipeBuilder;
+import slimeknights.tconstruct.library.tools.SlotType;
 import slimeknights.tconstruct.world.TinkerWorld;
 
 import java.util.function.Consumer;
+
+import static slimeknights.mantle.util.JsonHelper.wrap;
 
 public class ModRecipeProvider extends RecipeProvider {
     public ModRecipeProvider(PackOutput output) {
@@ -72,6 +79,17 @@ public class ModRecipeProvider extends RecipeProvider {
                 .requires(Items.ENDER_PEARL)
                 .unlockedBy("has_item", has(Items.ROTTEN_FLESH))
                 .save(consumer);
+        //Modifier
+        ModifierId autoFishId = new ModifierId("cherrytinker", "autofish");
+        ModifierRecipeBuilder.modifier(autoFishId)
+                .addInput(Items.FISHING_ROD)
+                .addInput(Items.OBSERVER)
+                .addInput(Items.COMPARATOR)
+                .addInput(Items.REDSTONE_TORCH) // 支持 Tag
+                .addInput(Items.REDSTONE)
+                .setTools(TinkerTags.Items.FISHING_RODS)
+                .setSlots(SlotType.ABILITY, 1)
+                .save(consumer, wrap(autoFishId, "tools/modifiers/", "_recipe"));
     }
 
 }

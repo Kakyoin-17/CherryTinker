@@ -16,6 +16,7 @@ public class ModModifiers {
     public static StaticModifier<Modifier> egold_p =MODIFIERS.register("egold_p", Egold_P::new);
     public static StaticModifier<Modifier> egold_a =MODIFIERS.register("egold_a", Egold_A::new);
     public static StaticModifier<Modifier> monster =MODIFIERS.register("monster", Monster::new);
+    public static StaticModifier<Modifier> autofish =MODIFIERS.register("autofish", AutoFishModifier::new);
 
 
 

@@ -81,11 +81,16 @@ public class ModLanguageProvider extends LanguageProvider {
        add("modifier.cherrytinker.monster", "Monster");
        add("modifier.cherrytinker.monster.flavor","Fleeting loyalty");
        add("modifier.cherrytinker.monster.description", "After a melee attack hits the target, a random monster is summoned to attack the target. The types of monsters that can appear increase with level (zombie, skeleton, spider, creeper, enderman).");
+       add("modifier.cherrytinker.autofish", "AutomaticFishing");
+       add("modifier.cherrytinker.autofish.flavor","Auto-fishing-mode is on");
+       add("modifier.cherrytinker.autofish.description", "Right-click to start automatic fishing, automatically retract the rod and cast the rod again");
+
+       //联动
        add("modifier.cherrygem_curios","Life-steal attack");
        add("modifier.cherrygem_curios.flavor","A little bit of healing");
        add("modifier.cherrygem_curios.description","Restores 0.5 health with each attack");
-       add("modifier.enchantedgold_curios","超振奋");
-       add("modifier.enchantedgold.flavor","Super excited");
+       add("modifier.enchantedgold_curios","Super excited");
+       add("modifier.enchantedgold.flavor","The Uplifting Power Of EnchantedGold");
        add("modifier.enchantedgold.description","+17 Maximum Health");
     }
     //中文
@@ -148,6 +153,11 @@ public class ModLanguageProvider extends LanguageProvider {
         add("modifier.cherrytinker.monster", "怪物");
         add("modifier.cherrytinker.monster.flavor","短暂的忠诚");
         add("modifier.cherrytinker.monster.description", "近战攻击命中目标后，召唤随机怪物攻击目标，随机到的怪物种类根据等级逐渐变多（僵尸，骷髅，蜘蛛，苦力怕，末影人）");
+        add("modifier.cherrytinker.autofish", "自动钓鱼");
+        add("modifier.cherrytinker.autofish.flavor","自动钓鱼模式已开启");
+        add("modifier.cherrytinker.autofish.description", "右键开始自动钓鱼，自动收杆并再次抛竿");
+
+        //联动
         add("modifier.cherrygem_curios","愈击");
         add("modifier.cherrygem_curios.flavor","小小的回血");
         add("modifier.cherrygem_curios.description","每次攻击回复0.5生命");
