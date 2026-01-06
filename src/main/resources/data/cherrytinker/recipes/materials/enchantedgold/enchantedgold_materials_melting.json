@@ -1,9 +1,0 @@
-{
-  "type": "tconstruct:material_melting",
-  "input": "cherrytinker:enchantedgold",
-  "temperature": 1500,
-  "result": {
-    "fluid": "cherrytinker:molten_enchantedgold",
-    "amount": 90
-  }
-}

@@ -1,7 +1,0 @@
-{
-  "loader": "tconstruct:material",
-  "parent": "forge:item/default",
-  "textures": {
-    "texture": "cherrytinker:item/tool/sk_blade/sk_blade"
-  }
-}

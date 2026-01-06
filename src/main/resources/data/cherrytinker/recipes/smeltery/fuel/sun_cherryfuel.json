@@ -1,9 +1,0 @@
-{
-  "type": "tconstruct:melting_fuel",
-  "duration": 2000,
-  "fluid": {
-    "amount": 50,
-    "fluid": "cherrytinker:sun_cherryfuel"
-  },
-  "temperature": 2777
-}

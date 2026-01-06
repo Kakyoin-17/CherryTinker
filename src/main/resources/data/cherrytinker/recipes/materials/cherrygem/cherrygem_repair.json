@@ -1,9 +1,0 @@
-{
-  "type": "tconstruct:material",
-  "ingredient": {
-    "item": "cherrytinker:cherrygem"
-  },
-  "value": 1,
-  "needed": 1,
-  "material": "cherrytinker:cherrygem"
-}
