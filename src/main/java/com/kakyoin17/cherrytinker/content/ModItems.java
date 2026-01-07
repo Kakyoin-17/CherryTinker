@@ -7,9 +7,7 @@ import com.kakyoin17.cherrytinker.tool.ToolDefinitions;
 import net.minecraft.world.effect.MobEffectInstance;
 import net.minecraft.world.effect.MobEffects;
 import net.minecraft.world.food.FoodProperties;
-import net.minecraft.world.item.Item;
-import net.minecraft.world.item.ItemNameBlockItem;
-import net.minecraft.world.item.Rarity;
+import net.minecraft.world.item.*;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
@@ -17,9 +15,9 @@ import net.minecraftforge.registries.RegistryObject;
 import slimeknights.tconstruct.common.registration.CastItemObject;
 import slimeknights.tconstruct.common.registration.ItemDeferredRegisterExtension;
 import slimeknights.tconstruct.library.tools.item.ModifiableItem;
+import slimeknights.tconstruct.library.tools.item.armor.MultilayerArmorItem;
 import slimeknights.tconstruct.library.tools.part.ToolPartItem;
 import slimeknights.tconstruct.tools.stats.HeadMaterialStats;
-
 
 public class ModItems {
     //注册器
@@ -32,14 +30,14 @@ public class ModItems {
     public static final RegistryObject<Item> CHERRY_JUICE  = ITEMS.register("cherry_juice",
             () -> new Item(new Item.Properties()
                     .food(new FoodProperties.Builder().nutrition(3).saturationMod(2f).alwaysEat()
-                            .effect(new MobEffectInstance(MobEffects.HEAL,1),1.0F).build())));
+                            .effect(() -> new MobEffectInstance(MobEffects.HEAL,1),1.0F).build())));
     public static final RegistryObject<Item> ENCHANTED_GOLDEN_CARROT = ITEMS.register("enchanted_golden_carrot",
             () -> new EnchantedGoldenCarrotItem(new Item.Properties()
                     .rarity(Rarity.EPIC)
                     .food(new FoodProperties.Builder().nutrition(6).saturationMod(20f)
-                            .effect(new MobEffectInstance(MobEffects.NIGHT_VISION,18000,0),1.0F)
-                            .effect(new MobEffectInstance(MobEffects.FIRE_RESISTANCE, 18000, 0), 1.0F)
-                            .effect(new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 18000, 3), 1.0F ).build())));
+                            .effect(() -> new MobEffectInstance(MobEffects.NIGHT_VISION,18000,0),1.0F)
+                            .effect(() -> new MobEffectInstance(MobEffects.FIRE_RESISTANCE, 18000, 0), 1.0F)
+                            .effect(() -> new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 18000, 3), 1.0F ).build())));
     //材料
     public static final RegistryObject<Item> CHERRYGEM  = ITEMS.register("cherrygem" ,
             () -> new CherryGemItem(new Item.Properties()));
@@ -52,6 +50,16 @@ public class ModItems {
     private static final Item.Properties TOOL = (new Item.Properties()).stacksTo(1);
     public static final RegistryObject<ModifiableItem> PAS = ITEMS.register("pas", () -> new ModifiableItem(TOOL, ToolDefinitions.PAS));
     public static final RegistryObject<ModifiableItem> SK = ITEMS.register("sk", () -> new ModifiableItem(TOOL,ToolDefinitions.SK));
+    //护甲
+    private static final Item.Properties PROPS = new Item.Properties().stacksTo(1).fireResistant();
+    public static final RegistryObject<MultilayerArmorItem> EXO_HELMET = ITEMS.register("exoskeleton_helmet",
+            () -> new MultilayerArmorItem(ToolDefinitions.EXOSKELETON, ArmorItem.Type.HELMET, PROPS));
+    public static final RegistryObject<MultilayerArmorItem> EXO_CHESTPLATE = ITEMS.register("exoskeleton_chestplate",
+            () -> new MultilayerArmorItem(ToolDefinitions.EXOSKELETON, ArmorItem.Type.CHESTPLATE, PROPS));
+    public static final RegistryObject<MultilayerArmorItem> EXO_LEGGINGS = ITEMS.register("exoskeleton_leggings",
+            () -> new MultilayerArmorItem(ToolDefinitions.EXOSKELETON, ArmorItem.Type.LEGGINGS, PROPS));
+    public static final RegistryObject<MultilayerArmorItem> EXO_BOOTS = ITEMS.register("exoskeleton_boots",
+            () -> new MultilayerArmorItem(ToolDefinitions.EXOSKELETON, ArmorItem.Type.BOOTS, PROPS));
     //部件
     private static final Item.Properties PART =(new Item.Properties());
     public static final RegistryObject<ToolPartItem> SK_BLADE = ITEMS.register("sk_blade", () -> new ToolPartItem(PART, HeadMaterialStats.ID));

@@ -2,7 +2,10 @@
   "replace": false,
   "values": [
     "cherrytinker:pas",
-    "cherrytinker:sk"
-
+    "cherrytinker:sk",
+    "cherrytinker:exoskeleton_helmet",
+    "cherrytinker:exoskeleton_chestplate",
+    "cherrytinker:exoskeleton_leggings",
+    "cherrytinker:exoskeleton_boots"
   ]
 }
