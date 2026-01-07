@@ -173,10 +173,10 @@ dependencies {
 
 
     // Mantle
-    implementation fg.deobf("curse.maven:mantle-74924:7367477")
+    implementation fg.deobf("curse.maven:mantle-74924:7414488")
 
     // Tinkers' Construct
-    implementation fg.deobf("curse.maven:tinkers-construct-74072:7371800")
+    implementation fg.deobf("curse.maven:tinkers-construct-74072:7419961")
 
     // JEI
     compileOnly fg.deobf("curse.maven:jei-238222:7014291")
