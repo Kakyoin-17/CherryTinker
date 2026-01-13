@@ -7,6 +7,7 @@ import net.minecraft.world.entity.Entity;
 import net.minecraft.world.entity.EquipmentSlot;
 import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.player.Player;
+import org.jetbrains.annotations.NotNull;
 import slimeknights.tconstruct.library.modifiers.Modifier;
 import slimeknights.tconstruct.library.modifiers.ModifierEntry;
 import slimeknights.tconstruct.library.modifiers.ModifierHooks;
@@ -26,7 +27,7 @@ public class Egold_P extends Modifier implements OnAttackedModifierHook, DamageB
     }
 
     @Override
-    public void onAttacked(IToolStackView iToolStackView, ModifierEntry modifierEntry, EquipmentContext context, EquipmentSlot equipmentSlot, DamageSource damageSource, float v, boolean b) {
+    public void onAttacked(@NotNull IToolStackView iToolStackView, @NotNull ModifierEntry modifierEntry, EquipmentContext context, @NotNull EquipmentSlot equipmentSlot, @NotNull DamageSource damageSource, float v, boolean b) {
         LivingEntity entity = context.getEntity();
         if (!(entity instanceof Player)) {
             return;
@@ -39,12 +40,14 @@ public class Egold_P extends Modifier implements OnAttackedModifierHook, DamageB
             int amplifier = totalLevel - 1;
             entity.addEffect(new MobEffectInstance(MobEffects.HEAL, 1, 1));
             entity.addEffect(new MobEffectInstance(MobEffects.ABSORPTION, 200, amplifier, false, false));
-            damageSource.getEntity().hurt(entity.damageSources().dragonBreath(),  10);
+            if (damageSource.getEntity() != null) {
+                damageSource.getEntity().hurt(entity.damageSources().dragonBreath(),  10);
+            }
         }
     }
 
     @Override
-    public boolean isDamageBlocked(IToolStackView iToolStackView, ModifierEntry modifierEntry, EquipmentContext context, EquipmentSlot equipmentSlot, DamageSource source, float v) {
+    public boolean isDamageBlocked(@NotNull IToolStackView iToolStackView, @NotNull ModifierEntry modifierEntry, EquipmentContext context, @NotNull EquipmentSlot equipmentSlot, DamageSource source, float v) {
         LivingEntity player = context.getEntity();
         Entity attackerEntity = source.getEntity();
         if (attackerEntity instanceof LivingEntity attacker) {

@@ -1,9 +1,9 @@
 package com.kakyoin17.cherrytinker.modifier;
 
 import net.minecraft.world.entity.LivingEntity;
-import net.minecraft.world.entity.projectile.AbstractArrow;
 import net.minecraft.world.entity.projectile.Projectile;
 import net.minecraft.world.phys.EntityHitResult;
+import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Nullable;
 import slimeknights.tconstruct.library.modifiers.Modifier;
 import slimeknights.tconstruct.library.modifiers.ModifierEntry;
@@ -28,28 +28,25 @@ public class Egold_A extends Modifier implements MeleeDamageModifierHook, MeleeH
     }
 
     @Override
-    public float getMeleeDamage(IToolStackView tool, ModifierEntry modifier, ToolAttackContext context, float baseDamage, float damage) {
+    public float getMeleeDamage(@NotNull IToolStackView tool, ModifierEntry modifier, ToolAttackContext context, float baseDamage, float damage) {
         LivingEntity attacker = context.getAttacker();
-        if (attacker != null) {
-            float maxHealth = attacker.getMaxHealth();
-            float bonus = (maxHealth / 2.0f) * modifier.getLevel();
-            return damage + bonus;
-        }
-        return damage;
+        float maxHealth = attacker.getMaxHealth();
+        float bonus = (maxHealth / 2.0f) * modifier.getLevel();
+        return damage + bonus;
     }
 
     @Override
-    public void afterMeleeHit(IToolStackView tool, ModifierEntry modifier, ToolAttackContext context, float damageDealt) {
+    public void afterMeleeHit(@NotNull IToolStackView tool, @NotNull ModifierEntry modifier, ToolAttackContext context, float damageDealt) {
         LivingEntity target = context.getLivingTarget();
         LivingEntity attacker = context.getAttacker();
-        if (target != null && attacker != null && !context.isExtraAttack()) {
+        if (target != null  && !context.isExtraAttack()) {
             target.invulnerableTime = 0;
             target.hurt(attacker.damageSources().magic(), 10.0f);
         }
     }
 
     @Override
-    public boolean onProjectileHitEntity(ModifierNBT modifiers, ModDataNBT persistentData, ModifierEntry modifier, Projectile projectile, EntityHitResult hit, @Nullable LivingEntity attacker, @Nullable LivingEntity target, boolean notBlocked) {
+    public boolean onProjectileHitEntity(@NotNull ModifierNBT modifiers, @NotNull ModDataNBT persistentData, @NotNull ModifierEntry modifier, @NotNull Projectile projectile, @NotNull EntityHitResult hit, @Nullable LivingEntity attacker, @Nullable LivingEntity target, boolean notBlocked) {
         if (attacker != null && target != null) {
             float maxHealth = attacker.getMaxHealth();
             float healthBonus = (maxHealth / 2.0f) * modifier.getLevel();

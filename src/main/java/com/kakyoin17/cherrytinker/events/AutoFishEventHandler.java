@@ -20,11 +20,12 @@ import java.util.Map;
 import java.util.UUID;
 
 @Mod.EventBusSubscriber(modid = "cherrytinker")
+
 public class AutoFishEventHandler {
 
-    private static Field NIBBLE_FIELD;
+    public static Field NIBBLE_FIELD;
 
-    private static final Map<UUID, Integer> RECAST_QUEUE = new HashMap<>();
+    public static final Map<UUID, Integer> RECAST_QUEUE = new HashMap<>();
 
     @SubscribeEvent
     public static void onPlayerTick(TickEvent.PlayerTickEvent event) {
@@ -37,7 +38,7 @@ public class AutoFishEventHandler {
         handleAutoRetrieve(player);
     }
 
-    private static void handleRecastQueue(Player player) {
+    public static void handleRecastQueue(Player player) {
         UUID uuid = player.getUUID();
         if (RECAST_QUEUE.containsKey(uuid)) {
             int ticksLeft = RECAST_QUEUE.get(uuid);
@@ -49,7 +50,7 @@ public class AutoFishEventHandler {
             }
         }
     }
-    private static void performRecast(Player player) {
+    public static void performRecast(Player player) {
         ItemStack stack = player.getMainHandItem();
         InteractionHand hand = InteractionHand.MAIN_HAND;
         if (!stack.canPerformAction(ToolActions.FISHING_ROD_CAST)) {
@@ -63,13 +64,13 @@ public class AutoFishEventHandler {
         }
     }
 
-    private static void handleAutoRetrieve(Player player) {
+    public static void handleAutoRetrieve(Player player) {
         FishingHook hook = player.fishing;
         if (hook != null && hook.getTags().contains(AutoFishModifier.AUTO_FISH_TAG)) {
             try {
                 if (NIBBLE_FIELD == null) {
                     try {
-                        NIBBLE_FIELD = ObfuscationReflectionHelper.findField(FishingHook.class, "f_37108_");
+                        NIBBLE_FIELD = ObfuscationReflectionHelper.findField(FishingHook.class, "f_37089_");
                     } catch (Exception e) {
                         NIBBLE_FIELD = FishingHook.class.getDeclaredField("nibble");
                     }

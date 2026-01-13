@@ -43,7 +43,9 @@ public class CherrygemAttack extends Modifier implements MeleeDamageModifierHook
         if (attacker instanceof Player player) {
             float b = (player.getFoodData().getFoodLevel());
             if (player.getFoodData().getFoodLevel() > 10){
-                target.hurt(attacker.damageSources().thrown(projectile, attacker), b*0.5f*modifier.getLevel());
+                if (target != null) {
+                    target.hurt(attacker.damageSources().thrown(projectile, attacker), b*0.5f*modifier.getLevel());
+                }
             }
         }
         return false;
