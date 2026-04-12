@@ -40,7 +40,7 @@ public class Egold_P extends Modifier implements OnAttackedModifierHook, DamageB
             int amplifier = totalLevel - 1;
             entity.addEffect(new MobEffectInstance(MobEffects.HEAL, 1, 1));
             entity.addEffect(new MobEffectInstance(MobEffects.ABSORPTION, 200, amplifier, false, false));
-            if (damageSource.getEntity() instanceof LivingEntity livingAttacker && damageSource.getEntity() != entity) {
+            if (damageSource.getEntity() instanceof LivingEntity && damageSource.getEntity() != entity) {
                 damageSource.getEntity().hurt(entity.damageSources().dragonBreath(),  10);
             }
         }
